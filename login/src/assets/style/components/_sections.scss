@@ -1,0 +1,116 @@
+.section{
+  &--signIn{
+   height: 100vh;
+background-color: $color-black; 
+color:$color-white;
+ &-title{
+  @include respond(tab-land) {
+    padding-top: 22rem;
+}
+@include respond(tab-port) {
+  padding-top: 10rem;
+}
+     font-size:4rem ;
+   padding-top: 10rem;
+    text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-align: center;
+  background-image: linear-gradient(to right, $color-primary-light ,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+ }
+ &-article{
+     margin-top:4rem;
+    
+    text-align: center;
+
+   &__header{
+    margin-bottom:4rem;
+    font-weight: 700;
+       font-size: 3rem;
+       letter-spacing: 0.1rem;
+   }
+ }
+ &-footer{
+   margin-top:3rem;
+   text-align: center;
+   &__text{
+    font-size: 1.3rem;
+    color: gray;
+    letter-spacing: 1px;
+   }
+ }
+}
+&--signUp{
+  height: 100vh;
+background-color: $color-black; 
+color:$color-white;
+&-title{
+  @include respond(tab-land) {
+    padding-top: 14rem;
+}
+@include respond(tab-port) {
+  padding-top: 6rem;
+}
+     font-size:4rem ;
+   padding-top: 6rem;
+    text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-align: center;
+  background-image: linear-gradient(to right, $color-primary-light ,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+ }
+ &-article{
+  margin-top:4rem;
+ 
+ text-align: center;
+
+&__header{
+ margin-bottom:4rem;
+ font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+}
+}
+&--forgotPassword{
+  height: 100vh;
+  background-color: $color-black; 
+  color:$color-white;
+  &-title{
+    @include respond(tab-land) {
+      padding-top: 24rem;
+  }
+  @include respond(tab-port) {
+    padding-top: 14rem;
+  }
+       font-size:4rem ;
+     padding-top: 14rem;
+      text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    background-image: linear-gradient(to right, $color-primary-light ,$color-primary-dark);
+      -webkit-background-clip: text;
+      color: transparent;
+   }
+   &-article{
+    margin-top:4rem;
+   
+   text-align: center;
+  
+  &__header{
+   margin-bottom:4rem;
+   font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+  }
+  }
+
+}
+}
+.link{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: $color-white;
+}

@@ -1,0 +1,49 @@
+
+
+.section--signIn-article__button{
+    width: 30rem;
+    height: 2.6rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.button{
+    &,
+    &:link,
+    &:visited {
+    font-size: 2rem;
+    color: $color-white;
+    margin-top: 2rem;
+    width: 32rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba($color-primary-dark,1) ,rgba($color-primary-light,1));
+    transition: all .2s;
+    position: relative;
+    display: inline-block;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+  
+}

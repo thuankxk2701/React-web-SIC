@@ -1,0 +1,162 @@
+.article{
+    margin-top:10rem;
+    color: $color-white;
+
+    &--header{
+      
+        @include respond(big-desktop){
+            width: 70%;
+        }
+ 
+        margin-left: auto;
+        margin-right: auto;
+    
+        border-bottom: 1px solid#787474;
+       
+       &-club{
+        text-align: center;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-weight: 700;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+       }
+       &-text{
+        text-align: center;
+           margin-top: 2.4rem;
+           color: #9ca9b3;
+           font-size: 1.6rem;
+           margin-bottom: 3rem;
+       }
+    }
+    &--row-carousel{
+        text-align: center;
+        height: 50rem;    
+    }
+    &--row-text{
+        text-align: center;
+        letter-spacing: .1rem;
+        color: #b6c2cb;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+
+    }
+}
+.image--carousel{
+    height: 34rem;
+}
+.article--row-leader-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+
+  
+}
+.article--row-leader-chairman{
+  margin-left: 14rem;
+   
+}
+.chairman{
+    &--image{
+  margin-top: 2.2rem;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%; 
+
+}
+&--text{
+    position: relative;
+    
+    &-name{
+       
+        display: inline;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+    &-position{
+        position: absolute;
+        font-size: 1.2rem;
+        top:2rem;
+        right:4rem;    
+        color: #9ca9b3;      
+       
+    }    
+}
+}
+
+
+.article--information{
+ 
+    height: 57rem;
+    
+    @include respond(big-desktop){
+        width: 75%;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid#787474;
+    margin-top: 10rem;
+    &-content__text{
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+}
+.article--information-card__box{
+    height: 30rem;
+}
+.article--card-box__icons{
+  position: relative;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    background-color:#9582ff;
+    border-radius: 50%;
+ 
+}
+.article--card-icon{
+    position: absolute;
+  font-size: 3rem;
+  transform: translate(50%, 50%);
+}
+.article--card-heading{
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 2.2rem;
+    font-size: 2.8rem;
+}
+.article--card-description{
+    font-weight:400;
+    font-size: 1.6rem;
+    color: #9ca9b3;
+    line-height: 1.8;
+    display: block;
+    text-align: center;
+}
+.article--active-header{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.article--active-box{
+  margin-top: 4rem;
+}
+.article--register{  
+
+
+    border-bottom: 1px solid#787474;
+
+    &-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+}
